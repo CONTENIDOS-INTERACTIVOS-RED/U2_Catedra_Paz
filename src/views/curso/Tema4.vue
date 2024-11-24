@@ -1,9 +1,10 @@
 <template lang="pug">
   .curso-main-container.pb-3
-    BannerInterno(:titulo="'Unidad 1. Fundamentos del Pensamiento Algorítmico'" :subTitulo="'SINTESIS'")
+    BannerInterno(:titulo="'Unidad 2. Teorías y enfoques para la resolución pacífica de conflictos'" :subTitulo="'SINTESIS'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       
-      p(data-aos="fade-up").mb-5 En esta unidad 2, Dibujo en proyección y representación de vistas, se explora el uso de la proyección ortogonal en el dibujo técnico, esencial para representar objetos tridimensionales en dos dimensiones mediante vistas planas, como la frontal, superior y lateral. Este método es clave en ingeniería, arquitectura y diseño industrial. Se detallan tipos de proyecciones como la multivista, isométrica, dimétrica, trimétrica y caballera, junto con la importancia de las vistas y las normas ISO para su disposición. Finalmente, se abordan tolerancias y ajustes, cruciales para un ensamblaje preciso y la funcionalidad de los componentes.
+      p(data-aos="fade-up").mb-5 La Unidad 2: Teorías y enfoques para la resolución pacífica de conflictos proporciona los fundamentos teóricos y prácticos necesarios para comprender y gestionar los conflictos de manera constructiva. A través del estudio de teorías clásicas y contemporáneas, como las propuestas por Karl Marx, Max Weber y Lewis Coser, se analiza el origen y las dinámicas de los conflictos sociales, económicos y políticos. Además, se presentan enfoques prácticos como la negociación, mediación y arbitraje, que ayudan a transformar los desacuerdos en oportunidades de cooperación y entendimiento. Esta unidad es clave para desarrollar habilidades que fomenten la convivencia pacífica y la colaboración en diversos entornos.
+
 
       .row.justify-content-center
         .col-lg-12.mb-5

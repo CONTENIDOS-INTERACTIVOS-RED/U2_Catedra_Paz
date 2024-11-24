@@ -97,6 +97,14 @@ export default {
           },
         ],
       },
+      {
+        nombreRuta: 'tema4',
+        icono: 'far fa-registered',
+        unidad: 'UNIDAD 2.',
+        numero: '4',
+        titulo: 'Síntesis',
+        desarrolloContenidos: true,
+      },
     ],
     subMenu: [
       // {
