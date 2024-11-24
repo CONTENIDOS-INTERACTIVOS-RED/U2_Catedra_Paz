@@ -1,421 +1,260 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'Unidad 1. Fundamentos del Pensamiento Algorítmico'" :subTitulo="'3. Representación de algoritmos: pseudocódigo y diagramas de flujo.'")
+  BannerInterno(
+    :titulo="'Unidad 2. Teorías y enfoques para la resolución pacífica de conflictos'"
+    :subTitulo="'3. Técnicas y habilidades para la resolución de conflictos'"
+  )
   .container.tarjeta.tarjeta--blanca.px-4.px-md-5.pt-4.pt-md-5.pb-0.overflow-hidden
     
-    p.mb-5(data-aos="fade-up") Como se mencionó anteriormente, un algoritmo es un conjunto de instrucciones lógicas ordenadas que cuentan con un inicio, un fin y que resuelven un problema. Encontrar estos pasos requiere de estructurarlos de manera tal que permitan ser eficientes y eficaces, resolviendo el problema de la manera más práctica posible. Una manera práctica de comprender la estructura funcional de un algoritmo, es la siguiente: 
+    p(data-aos="fade-right").mb-lg-5 Este tema aborda tres habilidades esenciales: la comunicación asertiva, la escucha activa y la colaboración (cooperación). Estas técnicas son claves para transformar las tensiones en oportunidades de diálogo y construcción de acuerdos, pues facilitan un enfoque respetuoso y constructivo en situaciones de conflicto. 
 
-    .row.justify-content-center.align-items-center.mb-4
-      .col-lg-10
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 4.
-          span  Estructura de un algoritmo
+    #t_3_1.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.1] Comunicación asertiva
 
-        .tabla-a.mb-4(data-aos="zoom-in")
-          table
-            thead
-              tr
-                th Estructura
-                th Descripción
-                th Ejemplo
+    p(data-aos="fade-right").mb-lg-5 La comunicación asertiva es una habilidad fundamental para la resolución de conflictos, porque permite a las personas expresar sus ideas, necesidades y emociones, de manera clara y respetuosa, sin recurrir a la agresividad ni caer en la pasividad. Este estilo de comunicación, crea un ambiente en el cual todos los participantes se sienten escuchados y valorados, lo cual es esencial para transformar las tensiones en oportunidades de diálogo constructivo.
 
-            tbody
-              tr(style="background-color: #FFF;")
-                th.text-center Solicitar datos
-                td 
-                  p.mb-0 Un algoritmo debe estar en la capacidad de solicitar "datos" que pueden ser valores o cadenas de caracteres.
-                td 
-                  p.mb-3 Solicitar edad;
-                  
-                  p.mb-3 Solicitar año;
-                  
-                  p.mb-0 Solicitar dirección;
-
-              tr(style="background-color: #F6F6F6;")
-                th.text-center Imprimir datos
-                td 
-                  p.mb-3 Un algoritmo debe estar en la capacidad de "presentar" los datos a través de impresión por pantalla. 
-                  p.mb-3Es importante recordar que una variable contiene un valor y una cadena de texto contiene un conjunto de valores o caracteres. Por ejemplo, Valor 10, cadena "Henry".
-                td
-                  p.mb-3 Imprimir mensaje
-                  p.mb-3.ps-4 Imprimir "Error en el valor ingresado"
-                  p.mb-3 Imprimir variable
-                  p.mb-0.ps-4 Imprimir "Su edad es: " +edad
-              tr(style="background-color: #FFF;")
-                th.text-center Evaluar condiciones
-                td 
-                  p.mb-0 Proceso que le permite al algoritmo obtener una respuesta (F o V) y de acuerdo con ella realizar un procedimiento. La evaluación de condiciones se lleva a cabo a través de la verificación del orden, longitud, tamaño, etc.
-                td
-                  p.mb-3 #[code If (edad>18)]   
-                  p.mb-3.ps-4 Desplegar "Usted es mayor de edad"
-                  p.mb-3 #[code else]
-                  p.mb-0.ps-4 Desplegar "Usted es menor de edad"
-              tr(style="background-color: #F6F6F6;")
-                th.text-center Ejecutar operaciones
-                td El algoritmo debe estar en la capacidad de realizar operaciones aritméticas y guardar el resultado en una variable.
-                td
-                  p.mb-0 edad_actual
-
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-10
-        .bg-color-2.p-4
-          .row.justify-content-center.align-items-center
-            .col-lg-auto
-              figure(data-aos="zoom-in")
-                img(src='@/assets/curso/tema3/1.svg', alt='')
-            .col-lg
-              p.mb-0 Una vez se ha logrado consolidar la estructura del algoritmo, en donde se tienen presente las variables de entrada, el procedimiento que se debe realizar y el resultado esperado, se puede plasmar a través del pseudocódigo y un diagrama de flujo el proceso que debe ejecutar el algoritmo para su solución; verificar a través de la comprobación y ajustar si es necesario. 
-
-    #t_3_1.titulo-segundo(data-aos="flip-up").mb-5
-      h2 #[span 3.1] Representación de algoritmos: pseudocódigo y diagramas de flujo  
-
-    h2.mb-4(data-aos="fade-up") Pseudocódigo
-
-    .row.justify-content-center.align-items-start.mb-5
-      .col-lg-7
-        p.mb-4(data-aos="fade-up") El pseudocódigo permite escribir de manera ordenada, la secuencia de pasos lógicos que el algoritmo debe ejecutar; es universal, lo que implica su comprensión y lectura sin requerir un lenguaje de programación formal para su escritura. Se considera natural o semiformal, se utiliza para dar lógica al algoritmo, antes de su construcción. 
-
-        .bg-color-6.p-4.px-md-5.mb-4(data-aos="fade-up")
-          p.mb-0 El pseudocódigo debe ser comprensible para personas sin conocimientos técnicos en programación, dado que debe priorizar la claridad sobre la sintaxis.
+    .row.align-items-start.mb-5
       .col-lg-5
-        figure(data-aos="zoom-in")
-          img(src='@/assets/curso/tema3/2.png', alt='')
-
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-7.order-2
-        p.mb-4(data-aos="fade-up") Las características del pseudocódigo son: 
-
-        AcordionA(tipo="b")(data-aos="zoom-in")
-          .div(titulo="Libre de rigidez sintáctica")
-            p Libre de rigidez sintáctica propia de los lenguajes de programación, es decir, no sigue las reglas propias de un lenguaje.
-
-          .div(titulo="Estructura lógica")
-            p Utiliza secuencias, condiciones y ciclos dentro de su estructura.
-
-          .div(titulo="Facilidad de traducción")
-            p Una vez se ha terminado de redactar el algoritmo, se podría traducir fácilmente a cualquier lenguaje de programación, gracias a su fácil lectura y comprensión.
-
-          .div(titulo="Universal")
-            p Se debe comprender fácilmente debido a su simplicidad y claridad.
-
-      .col-lg-5.order-1
-        figure(data-aos="zoom-in")
-          img(src="@/assets/curso/tema3/3.png", alt="")
-
-
-    p.mb-5(data-aos="fade-up") La estructura del pseudocódigo está conformada por:
-
-
-    .titulo-figura.mb-4(data-aos="flip-up")
-      h5 Figura 2. 
-      span Estructura del pseudocódigo
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
-        figure(data-aos="zoom-in")
-          img(src='@/assets/curso/figuras/figura2.png', alt='', style="max-width: 610px;").mx-auto
-      .col-lg-6
-        p.mb-4(data-aos="fade-up") Para comprender mejor la estructura del pseudocódigo, es necesario definir cada paso:
-
-        ol.lista-ol--cuadro(data-aos="fade-up").mb-3
-          li 
-            .lista-ol--cuadro__vineta
-              span 1
-            | Todo algoritmo debe tener un #[strong inicio] y un #[strong fin].
-          li 
-            .lista-ol--cuadro__vineta
-              span 2
-            | Las variables deben ser #[strong declaradas] (se deben asignar los espacios en memoria, para cada variable, porque serán utilizadas por el código a la hora de realizar los procedimientos propios del algoritmo). Este paso es importante pues requiere de atención para evitar errores en la ejecución o validación del algoritmo.
-          li 
-            .lista-ol--cuadro__vineta
-              span 3
-            | La #[strong secuencia] determina el orden lógico que debe seguir el algoritmo.
-          li 
-            .lista-ol--cuadro__vineta
-              span 4
-            | Las #[strong condiciones] permiten la toma de decisiones dentro del ciclo normal del algoritmo; así, a través de la evaluación de expresiones lógicas, se determina el paso a seguir dentro del código.
-          li 
-            .lista-ol--cuadro__vineta
-              span 5
-            | Los #[strong ciclos] permiten crear estructuras repetitivas que ahorran líneas de código y agilizan el procesamiento de las operaciones dentro del código.
-
-
-    .bg-color-6.mb-5
-      .row.justify-content-center.align-items-center
-        .col-lg
-          .px-5
-            p.mb-4(data-aos="fade-up") Para ampliar los conceptos sobre pseudocódigo y conocer algunos ejemplos, lo invitamos a ver los siguientes videos:
-
-            a.anexo.mb-4.bg-white.w-fit(href="https://youtu.be/Q1z34G3fTUM" target="_blank")(data-aos="flip-up")
-              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
-                img(src="@/assets/template/icono-video.svg")
-              .anexo__texto
-                p <strong>Video. </strong> ¿Qué es un pseudocódigo? | Explicación rápida y sencilla
-
-            a.anexo.mb-4.bg-white.w-fit(href="https://youtu.be/lByEQkmKRis" target="_blank")(data-aos="flip-up")
-              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
-                img(src="@/assets/template/icono-video.svg")
-              .anexo__texto
-                p <strong>Video. </strong> Ejemplo de un pseudocódigo y diagrama de flujo 
-
-        .col-lg-auto
-          figure
-            img(src='@/assets/curso/tema3/2.png', alt='')
-
-    h2.mb-4(data-aos="fade-up") Ejemplo 1 - Operador matemático. Suma de dos números
-
-    p.mb-4(data-aos="fade-up") Para realizar la suma de dos números, se requiere el número 1, número 2, un operador matemático (+) y el proceso resultante deberá ser almacenado dentro de una variable suma. 
-
-    p.mb-4(data-aos="fade-up") Siempre se debe dar inicio y fin al algoritmo, además de declarar las variables; continuando con el ejemplo, el pseudocódigo resultante sería:
-
-    .row.justify-content-center.align-items-center.mb-4
-      .col-lg-10
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 5.
-          span Pseudocódigo operador matemático
-
-        .tabla-a.mb-4(data-aos="zoom-in")
-          table
-              thead
-                tr
-                  th Pseudocódigo
-                  th Descripción
-
-              tbody
-                tr(style="background-color: #F6F6F6;")
-                  td
-                    p Inicio
-                    p.ps-4 Leer número 1
-                    p.ps-4 Leer número 2
-                    p.ps-4 Suma = número 1 + número 2
-                    p.ps-4 Imprimir "El resultado de la suma es: ", suma
-                    p Fin
-                  td 
-                    p Inicio
-                    p.ps-4 Se lee el valor del número 1
-                    p.ps-4 Se lee el valor del número 2
-                    p.ps-4 Se realiza la suma de los dos números
-                    p.ps-4 Se muestra en pantalla el resultado de la suma
-                    p Fin 
-
-        p.mb-4(data-aos="fade-up") El ejemplo anterior cumple con las características del pseudocódigo; es simple, claro, lógico, cuenta con una sintaxis libre de lenguajes de programación y es universal; fácilmente se comprende el objetivo del código escrito, sin ser programador. 
-
-
-        .bg-color-2.p-4.px-md-5.mb-4(data-aos="fade-up")
-          p.mb-0 Si se desea aumentar el nivel de complejidad del ejemplo 1, se puede incluir una validación que indique cuál de los dos números es mayor. 
-
-    h2.mb-4(data-aos="fade-up") Ejemplo 2 - Operador relacional. Verificación del mayor de dos números
-
-    p.mb-4(data-aos="fade-up") Para realizar la verificación del mayor de dos números, se requiere el número 1, número 2, un operador relacional (>) y el proceso resultante deberá ser presentado en pantalla. 
-
-    .row.justify-content-center.align-items-center.mb-4
-      .col-lg-10
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 6.
-          span Pseudocódigo operador relacional
-
-        .tabla-a.mb-4(data-aos="zoom-in")
-          table
-              thead
-                tr
-                  th Pseudocódigo
-                  th Descripción
-
-              tbody
-                tr(style="background-color: #F6F6F6;")
-                  td
-                    p Inicio
-                    p.ps-3 Leer número 1
-                    p.ps-3 Leer número 2
-                    p.ps-3 Si (número 1 &gt; número 2) entonces
-                    p.ps-5 Imprimir "El número 1 es mayor"
-                    p.ps-3 Sino
-                    p.ps-5 Imprimir "El número 2 es mayor"
-                    p Fin
-                  td 
-                    p Inicio
-                    p.ps-3 Se lee el valor del número 1
-                    p.ps-3 Se lee el valor del número 2
-                    p.ps-3 Se realiza la comparación entre los dos números
-                    p.ps-3 Si el número 1 es mayor que el número 2, 
-                    p.ps-5 se muestra en pantalla el mensaje "El número 1 es mayor"
-                    p.ps-3 Sino 
-                    p.ps-5 se muestra en pantalla el mensaje "El número 2 es mayor"
-                    p Fin 
-
-        p.mb-4(data-aos="fade-up") En el ejemplo anterior, queda clara la forma como funciona, el operador relacional.
-
-        p.mb-4(data-aos="fade-up") Al verificar si se cumple que el número 1 es mayor al número 2, se presenta en pantalla el mensaje “el número 1 es mayor”; de lo contrario, el número 2 sería mayor al número 1 y el mensaje sería “el número 2 es mayor”. 
-
-        .bg-color-3.p-4.px-md-5.mb-4(data-aos="fade-up")
-          .row.justify-content-center.align-items-center
-            .col-lg-auto
-              figure
-                img(src='@/assets/curso/tema3/3.svg', alt='')
-            .col-lg
-              p.mb-0 Como ejercicio práctico, puede asignar valores a cada número, seguir la secuencia de pasos y utilizar el operador relacional. La impresión en pantalla dependerá de los números que utilice.
-
-    h2.mb-4(data-aos="fade-up") Ejemplo 3 - Utilización de ciclo
-
-    p.mb-4(data-aos="fade-up") Obtener el resultado de la multiplicación de un número x hasta el 10. 
-
-    .row.justify-content-center.align-items-center.mb-4
-      .col-lg-10
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 7.
-          span Pseudocódigo operador relacional
-
-        .tabla-a.mb-4(data-aos="zoom-in")
-          table
-              thead
-                tr
-                  th Pseudocódigo
-                  th Descripción
-
-              tbody
-                tr(style="background-color: #F6F6F6;")
-                  td
-                    p Inicio
-                    p.ps-3 contador = 1;
-                    p.ps-3 Leer número x;
-                    p.ps-3 Mientras (contador &lt;= 10) hacer
-                    p.ps-5 Imprimir "El resultado de la multiplicación es: ", x * contador
-                    p.ps-3 contador = contador + 1;
-                    p Fin
-                  td 
-                    p Inicio
-                    p.ps-3 Se inicializa el contador en 1
-                    p.ps-3 Se lee el valor del número x
-                    p.ps-3 Mientras el contador sea menor o igual a 10, se realiza la multiplicación
-                    p.ps-5 Se muestra en pantalla el resultado de la multiplicación
-                    p.ps-3 Se incrementa el contador en 1
-                    p Fin 
-
-        .bg-color-6.mb-5
-          .row.justify-content-center.align-items-center
-            .col-lg.order-2
-              .px-4
-                p.mb-4(data-aos="fade-up") #[strong Del ejemplo anterior, pueden surgir algunos interrogantes:]
-
-                .row.justify-content-center.align-items-center.mb-3
-                  .col-auto
-                    figure
-                      img(src='@/assets/bullets/icon-1.svg' alt='' style="width: 20px;")
-                  .col
-                    p.mb-0 ¿Qué puede pasar si el contador no se inicializa?
-                
-                .row.justify-content-center.align-items-center.mb-3
-                  .col-auto
-                    figure
-                      img(src='@/assets/bullets/icon-1.svg' alt='' style="width: 20px;")
-                  .col
-                    p.mb-0 ¿Qué pasaría si no se incrementa el contador?
-
-                .row.justify-content-center.align-items-center.mb-3
-                  .col-auto
-                    figure
-                      img(src='@/assets/bullets/icon-1.svg' alt='' style="width: 20px;")
-                  .col
-                    p.mb-0 ¿Qué pasa en el momento que el contador sea igual a 10?
-            .col-lg-auto.order-1
-              figure
-                img(src='@/assets/curso/tema3/4.png', alt='')
-
-    p.mb-5(data-aos="fade-up") Las ventajas del pseudocódigo son:
-
-
-    .row.justify-content-center.align-items-start.mb-5
+        figure
+          img(src="@/assets/curso/tema3/1.svg", data-aos="zoom-in")
       .col-lg-7
+        p(data-aos="fade-left") La asertividad se distingue por su equilibrio entre dos extremos: la agresión y la pasividad. A diferencia de la comunicación agresiva, que busca imponer las propias opiniones sin considerar las de los demás, o de la comunicación pasiva, donde se evitan las confrontaciones a costa de los propios intereses, la asertividad permite que las personas expresen sus puntos de vista sin dañar la relación con el otro. Esta habilidad se basa en el respeto mutuo y en el reconocimiento de que ambas partes en el conflicto, tienen el derecho a expresar sus perspectivas y a ser escuchadas (UNITEC, 2016).
 
-        AcordionA(tipo="b")(data-aos="zoom-in").mb-4
-          .div(titulo="Claridad")
-            p Al momento de desarrollar el pseudocódigo, se concentra en expresar la lógica del programa sin especificaciones propias de lenguajes técnicos.
+        p(data-aos="fade-left") Al ser asertiva, una persona puede comunicar sus necesidades sin provocar reacciones defensivas en los demás, lo que facilita una respuesta colaborativa. Este tipo de comunicación incluye el uso de un lenguaje claro, honesto y directo, que ayuda a evitar malentendidos y promueve la transparencia en la interacción. Como indican La Rosa y Rivas (2017), “la comunicación asertiva permite expresar lo que uno siente y piensa de forma honesta y sin herir a los otros” (p. 92).
 
-          .div(titulo="Versatilidad")
-            p Se puede adaptar a cualquier lenguaje de programación.
 
-          .div(titulo="Facilita la comunicación")
-            p Cualquier persona puede entender la finalidad del programa.
+    h3(data-aos="fade-right") Técnicas para la comunicación asertiva
 
-          .div(titulo="Ahorra tiempo")
-            p Permite encontrar errores antes de pasar a escribir el código.
+    p(data-aos="fade-right").mb-lg-5 Para desarrollar la asertividad en la comunicación, existen varias técnicas útiles que pueden aplicarse en diferentes contextos:
 
-        div(style="background-color: #E4FEFE;").p-4.px-md-5(data-aos="fade-up")
-          p.mb-0 En conclusión, el pseudocódigo, permite escribir un programa de manera semiformal, enfocándose en la lógica del algoritmo y cuyo propósito es facilitar la implementación de un lenguaje de programación. 
+    .row.align-items-center.mb-5
+      .col-lg-5.order-lg-2
+        figure
+          img(src="@/assets/curso/tema2/1.png", alt="").mb-4.mb-lg-0
+      .col-lg-7.order-lg-1
+        AcordionA(tipo="b")
+          .div(titulo="Uso de <em>Yo</em> en lugar de <em>Tú</em>")
+            p Una de las estrategias más efectivas en la comunicación asertiva, es la de marcar los mensajes desde la propia perspectiva, utilizando frases que comiencen con “Yo” en lugar de “Tú”. Esto evita que el otro se sienta culpable o atacado. Por ejemplo, decir “Yo me siento frustrado cuando se interrumpen mis ideas” en lugar de “Tú siempre interrumpes mis ideas” ayuda a comunicar la incomodidad sin acusación.
+
+          .div(titulo="Expresión de necesidades y límites claros")
+            p La comunicación asertiva requiere que las personas expresen sus necesidades de manera específica, estableciendo límites claros. Esto ayuda a evitar confusiones y permite a la otra parte, entender exactamente qué es lo que se necesita para resolver la situación. Establecer límites también facilita que la otra persona respete el espacio emocional o físico del interlocutor.
+
+          .div(titulo="Técnica de &quot;Banco de Niebla&quot;")
+            p Esta estrategia implica reconocer y validar los sentimientos del otro, sin ceder a presionar ni comprometer los propios valores. Por ejemplo, en un desacuerdo, responda con “Entiendo que sientas que esto es importante; sin embargo, mantengo mi punto de vista porque si consideras que…” permite que la conversación avance, respetando ambas posturas.
+
+
+
+    .row.mb-5
+      .col-lg-7.order-lg-2
+        p(data-aos="fade-right") La comunicación asertiva tiene un impacto significativo en el proceso de resolución de conflictos, porque promueve un ambiente donde las tensiones pueden expresarse y resolverse, sin hostilidad. Esta habilidad facilita la reducción de malentendidos y aumenta la probabilidad de alcanzar acuerdos mutuamente satisfactorios, dado que ambas partes se sienten valoradas y escuchadas (PNUD, 2018; UNITEC, 2016).     
+        p(data-aos="fade-right") Además, la asertividad fortalece las relaciones a largo plazo. Para evitar tanto la agresividad como la pasividad, este estilo de comunicación promueve interacciones basadas en la honestidad y el respeto. En el ámbito laboral, por ejemplo, un líder asertivo puede establecer expectativas claras con su equipo, lo cual reduce las tensiones y mejora la eficiencia y el clima laboral. En el contexto familiar, la comunicación asertiva permite que los miembros expresen sus sentimientos y necesidades sin temores ni resentimientos, promoviendo un ambiente de comprensión y apoyo mutuo. 
+      .col-lg-5.order-lg-1
+        figure
+          img(src="@/assets/curso/tema3/3.png", data-aos="zoom-in").mb-4.mb-lg-0
+
+
+    p(data-aos="fade-right").mb-lg-5 La asertividad también contribuye al desarrollo personal, dado que permite que las personas se sientan empoderadas y seguras al expresar sus opiniones, sin temor a ser ignoradas o desestimadas. Este empoderamiento fortalece la autoconfianza y motiva a las personas a establecer límites saludables en sus relaciones, lo que es fundamental para su bienestar emocional.
+
+
+    .row.mb-5
+      .col-lg-5.order-lg-2
+        figure
+          img(src="@/assets/curso/tema3/5.png", data-aos="zoom-in").mb-4.mb-lg-0
+      .col-lg-7.order-lg-1
+        .bg-color-1.p-4(data-aos="fade-left").mb-4
+          .row.align-items-center
+            .col-lg-auto
+              img(src="@/assets/curso/tema3/4.svg", style="max-width: 90px").mx-auto
+            .col-lg
+              p.mb-0 En resumen, la comunicación asertiva es una técnica invaluable en la resolución de conflictos, puesto que facilita la expresión clara y respetuosa de pensamientos y necesidades.
+
+        p(data-aos="fade-left") Mediante el uso de un lenguaje directo y honesto, así como de técnicas específicas como el “yo” en lugar del “tú”, la expresión de límites y el uso de respuestas neutrales, las personas pueden abordar conflictos sin generar tensiones innecesarias.
+
+        p(data-aos="fade-left") Esta habilidad no solo favorece la solución de tensiones inmediatas, sino que también fortalece las relaciones y fomenta un ambiente de respeto y colaboración, a largo plazo, contribuyendo al crecimiento personal y al desarrollo de interacciones, basadas en la comprensión y la empatía.
+
+
+
+    #t_3_2.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.2] Escucha activa
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-8.order-2.order-lg-1
+        p(data-aos="fade-right") La escucha es una habilidad crucial en la resolución de conflictos, porque permite a las personas comprender a fondo las perspectivas, emociones y necesidades de los demás. A diferencia de la escucha pasiva, que se limita a recibir información, esto implica una atención intencionada y completa. Esta técnica promueve un ambiente de respeto y empatía, facilitando el diálogo constructivo y la cooperación. La escucha activa es una de las bases para reducir tensiones, ya que permite que cada participante se sienta realmente comprendido (González Rey, 2016; UNITEC, 2016).
+
+      .col-lg-4.order-1.order-lg-2
+        figure
+          img(src="@/assets/curso/tema3/6.png", data-aos="zoom-in").mb-4.mb-lg-0
+
+
+    h3(data-aos="fade-right") Componentes fundamentales de la escucha activa
+
+    p(data-aos="fade-right") La escucha está compuesta por varios elementos claves que ayudan a garantizar que el receptor no solo capte el contenido verbal, sino también el contexto emocional y las señales no verbales del interlocutor:
+
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema3/slider-1.png")
+            .col-lg-7
+              h5 Atención plena
+              p La verdadera manera de escuchar comienza con la atención total hacia el interlocutor, eliminando distracciones y manteniendo el contacto visual. pEsto implica poner en pausa cualquier actividad paralela y centrarse exclusivamente en la otra persona.
+
+              p Según La Rosa y Rivas (2017), “la atención plena demuestra respeto y disposición, lo cual genera confianza y facilita el entendimiento mutuo” (p. 45).
+
+              p Esta completa atención permite captar tanto el mensaje, como el tono emocional detrás de las palabras.
+
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema3/slider-2.png")
+            .col-lg-7
+              h5 Parafraseo
+              p Una técnica clave es el párrafo, que consiste en reformular lo que ha expresado la otra persona, para confirmar que se ha comprendido el mensaje. 
+
+              p Al parafrasear, el oyente puede decir frases como: “Si entiendo bien, lo que me dices es…”.
+
+              p Esta técnica no solo demuestra que se ha escuchado con atención, sino que también permite corregir cualquier malentendido de inmediato, evitando que el conflicto se intensifique por interpretaciones erróneas (PNUD, 2018).
+
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema3/slider-3.png")
+            .col-lg-7
+              h5 Reflexión de sentimientos
+              p Reconocer y reflejar las emociones de la otra persona, es esencial para demostrar empatía. 
+
+              p Expresiones como “Parece que te sientes frustrado por esta situación” ayudan a validar los sentimientos del otro, creando un ambiente de comprensión.
+
+              p La validación emocional reduce la efectividad y permite que las partes involucradas en el conflicto, se abran al diálogo con mayor disposición, pues sienten que sus emociones son legítimas y respetadas (Weber, 1922; González Rey, 2016).
+
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema3/slider-4.png")
+            .col-lg-7
+              h5 Preguntas clarificadoras
+              p Las preguntas abiertas y clarificadoras, son fundamentales para profundizar en el entendimiento del mensaje. 
+
+              p Preguntas como “¿podrías explicar un poco más sobre eso?”, o “¿qué aspectos te preocupan más en esta situación?”, ayudan a obtener una comprensión más detallada de los puntos de vista de la otra persona.
+
+              p Este tipo de preguntas demuestra interés genuino y fomenta una conversación más rica y significativa (La Rosa & Rivas, 2017).
+
+
+    .row.mb-5
+      .col-lg-7.order-lg-1.order-2
+        p(data-aos="fade-right") La escucha activa aporta numerosos beneficios en la resolución de conflictos, promoviendo un ambiente en el que las tensiones pueden abordarse de manera constructiva. Uno de los principales beneficios es que se reduce la reactividad emocional. Al sentirse escuchada, la otra persona experimenta una disminución en la intensidad emocional, lo cual facilita el diálogo y evita que el conflicto escale. Cuando los participantes perciben que sus emociones y opiniones son respetadas, están más dispuestos a considerar las perspectivas ajenas (PNUD, 2018).
+        p(data-aos="fade-right") Asimismo, se fortalecen las relaciones entre las partes, dado que permite construir un vínculo basado en la confianza y el respeto. En un entorno laboral, por ejemplo, los equipos que practican los componentes, pueden resolver desacuerdos de manera más rápida y eficiente, promoviendo un ambiente de colaboración y apoyo. En contextos familiares o personales, la escucha activa fomenta la empatía, lo cual es clave para resolver conflictos, sin dañar las relaciones (UNITEC, 2016).
+      .col-lg-5.order-1.order-lg-2
+        figure
+          img(src="@/assets/curso/tema3/7.png", data-aos="zoom-in").mb-4.mb-lg-0
+
+
+    .row.mb-5
+      .col-lg-7.order-lg-2
+        p(data-aos="fade-right") Otra ventaja es que se pueden identificar intereses y necesidades subyacentes. Cuando se capta tanto el contenido como las emociones de la conversación, es posible descubrir las verdaderas preocupaciones detrás de las posturas iniciales, lo cual facilita la búsqueda de soluciones que respondan a las necesidades reales de cada parte. Esto es especialmente útil en conflictos complejos, donde las posiciones iniciales pueden ocultar intereses que aún no han sido expresados de manera abierta (González Rey, 2016).
+        p(data-aos="fade-right") Escuchar de manera correcta, es una herramienta poderosa en la resolución de conflictos, pues permite un nivel de comprensión profundo que va más allá de las palabras. Mediante técnicas como la atención plena, el párrafo, la reflexión de sentimientos y las preguntas clarificadoras, esta habilidad no solo facilita el entendimiento mutuo, sino que también contribuye a reducir tensiones y construir relaciones de respeto y confianza. La escucha activa transforma el conflicto en una oportunidad de diálogo y aprendizaje, mejorando la disposición de las partes para encontrar soluciones que beneficien a todos.
+      .col-lg-5.order-lg-1
+        figure
+          img(src="@/assets/curso/tema3/8.png", data-aos="zoom-in").mb-4.mb-lg-0
+
+
+
+    #t_3_3.titulo-segundo(data-aos="flip-up")
+      h2 #[span 3.3] Colaboración (cooperación)
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-8.order-2.order-lg-1
+        p(data-aos="fade-right") La colaboración es una habilidad clave en la resolución de conflictos, porque implica el esfuerzo conjunto para encontrar soluciones que beneficien a ambas partes. Esta capacidad va más allá de la simple negociación, puesto que busca construir acuerdos en los que los involucrados se sientan reconocidos y satisfechos. La disposición para trabajar en equipo y valorar los intereses de los demás, es fundamental en esta dinámica, pues permite transformar el conflicto en una oportunidad para fortalecer las relaciones y construir confianza (González Rey, 2016; UNITEC, 2016).
+
+      .col-lg-4.order-1.order-lg-2
+        figure
+          img(src="@/assets/curso/tema3/9.svg", data-aos="zoom-in").mb-4.mb-lg-0
+
+    h3(data-aos="fade-right") Componentes de la colaboración en la resolución de conflictos
+
+    p(data-aos="fade-right") La colaboración efectiva en la resolución de conflictos, se basa en varios elementos esenciales que permiten que las partes trabajen de manera conjunta y constructiva. Estos componentes son los cimientos de una cooperación exitosa, dado que promueven el entendimiento mutuo y facilitan la construcción de soluciones equitativas.
+
+    p(data-aos="fade-right") Conozcamos cada uno de ellos:
+
+    .row.align-items-center.mb-5
+      .col-lg-7
+        AcordionA(tipo="b")
+          .div(titulo="Identificación de intereses comunes")
+            p Un paso importante en el trabajo conjunto, es reconocer los intereses compartidos que pueden servir como base para construir soluciones. En lugar de centrarse exclusivamente en las posiciones individuales, es necesario buscar los objetivos comunes que cada parte tiene y que pueden alinearse. Esto no solo facilita el diálogo, sino que también aumenta la disposición de los involucrados, para encontrar alternativas que beneficien a todos (PNUD, 2018).
+
+          .div(titulo="Promoción del compromiso y la flexibilidad")
+            p La colaboración implica que cada parte esté dispuesta a realizar concesiones para alcanzar una solución satisfactoria. Esta flexibilidad es fundamental, dado que permite que todos los involucrados sientan que están recibiendo algo de valor, incluso si han tenido que ceder en ciertos aspectos. Al comprometerse y mostrar apertura al cambio, se fomenta un ambiente en el que las partes están motivadas a mantener el acuerdo alcanzado (La Rosa & Rivas, 2017).
+
+          .div(titulo="Búsqueda de alternativas creativas")
+            p En un proceso colaborativo, la generación de ideas innovadoras es esencial para encontrar soluciones que no solo resuelvan el conflicto, sino que también beneficien a ambas partes. Este enfoque promueve la creatividad y permite que los participantes se sientan empoderados, porque pueden aportar ideas y propuestas que enriquecen el diálogo. En situaciones complejas, como en el ámbito laboral o comunitario, la creatividad puede abrir nuevas posibilidades que antes no habían sido contempladas (UNITEC, 2016).
+
+          .div(titulo="Fomento del trabajo en equipo")
+            p La disposición a trabajar en equipo y a participar activamente en el proceso de resolución, es clave para que el conflicto se convierta en una experiencia constructiva. Este enfoque requiere que cada parte adopte una actitud de colaboración, en lugar de confrontación, buscando construir una relación de confianza y respeto. En contextos laborales, por ejemplo, trabajar en equipo para resolver desacuerdos, fortalece las relaciones y mejora el ambiente laboral, creando una base sólida para enfrentar futuros desafíos de manera conjunta (González Rey, 2016).
       .col-lg-5
-        figure(data-aos="zoom-in")
-          img(src="@/assets/curso/tema3/5.png", alt="")
+        figure
+          img(src="@/assets/curso/tema3/10.png", alt="").mt-4.mt-lg-0
 
-    .row.justify-content-center.mb-5
-      .col-lg-9
-        .bg-color-white.shadow-soft.py-4.px-lg-5(data-aos="fade-up")
-            .row.justify-content-around.align-items-center
-              .col-md-auto
-                img(src="@/assets/template/bg-icono-link.svg", style="width: 90px;")
-              .col
-                .row.justify-content-between.align-items-center
-                  .col.mb-3.mb-sm-0
-                    h3.mb-1 Concepto del Pseudocódigo
-                    p.mb-0 Se puede ampliar el concepto sobre pseudocódigo en el libro: Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C: (ed.). Plaza y Valdés (México).
-                  .col-sm-auto
-                    a.boton.color-acento-botones.texto-blanco(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=90" target="_blank")
-                      span Ir al sitio web
-                      i.fas.fa-arrow-right
 
-    h2.mb-4(data-aos="fade-up") Diagramas de flujo
+    .row.align-items-center.mb-5
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema3/11.png", alt="").mb-4.mb-lg-0
+      .col-lg-7
+        p(data-aos="fade-left") El enfoque colaborativo tiene múltiples beneficios en la resolución de conflictos:
 
-    p.mb-4(data-aos="fade-up") Un diagrama de flujo corresponde a la representación gráfica de un proceso y se utiliza en programación, para crear algoritmos en los cuales se emplean representaciones gráficas o símbolos estandarizados del proceso; ilustran paso a paso y de manera sencilla la lógica que debe seguir el programa; su uso es amplio como por ejemplo, la toma de decisiones, gestión de procesos, entre otros. 
+        AcordionA(tipo="b")
+          .div(titulo="Fomenta la sostenibilidad de los acuerdos alcanzados")
+            p Al trabajar juntos para desarrollar una solución, las partes se sienten más comprometidas con el resultado, lo cual aumenta las probabilidades para que el acuerdo sea respetado y mantenido a largo plazo. La colaboración fortalece el sentido de pertenencia y empoderamiento, puesto que cada participante ha tenido la oportunidad de contribuir, de manera activa, al proceso (PNUD, 2018).
 
-    p.mb-4(data-aos="fade-up") Las características de un diagrama de flujo son:
+          .div(titulo="Clima de respeto y confianza")
+            p El trabajo conjunto promueve un clima de respeto y confianza que facilita la resolución de conflictos futuros. Cuando los participantes sienten que sus perspectivas y necesidades han sido valoradas, es más probable que adopten una actitud abierta en caso de nuevos desacuerdos, lo que reduce la probabilidad de confrontaciones prolongadas. Este ambiente de respeto y reciprocidad, es especialmente valioso en entornos como el laboral o familiar, donde las relaciones a largo plazo son prioritarias (La Rosa & Rivas, 2017).
 
-    .bg-full-width.bg-fondo-1.p-4
-      .px-4.p-md-5
-        .row.justify-content-center
-          .col-lg-8
-            ImagenInfografica.color-acento-contenido
-              template(v-slot:imagen)
-                figure
-                  img(src='@/assets/curso/infografia/info1.png', alt='', style="max-width: 858px;").mx-auto
+          .div(titulo="Desarrollo de habilidades interpersonales")
+            p La colaboración en la resolución de conflictos permite el desarrollo de habilidades interpersonales como la empatía, la flexibilidad y la creatividad, que son útiles no solo para resolver el conflicto presente, sino también para enfrentar futuras tensiones. Estas habilidades no solo mejoran las relaciones entre los participantes, sino que también contribuyen al crecimiento personal, promoviendo un enfoque más positivo y resiliente ante las dificultades.
 
-              .bg-color-6.p-3(x="35%" y="7.2%" numero="+")
-                p #[strong Estandarización]
-                p Se utilizan figuras, cada una de ellas con un significado particular.
-
-              .bg-color-6.p-3(x="61%" y="28.3%" numero="+")
-                p #[strong Secuencia]
-                p El flujo debe estar determinado por un orden lógico que se conecta a través de flechas que enlazan una figura con la otra y marcan el paso a paso.
-
-              .bg-color-6.p-3(x="34.8%" y="50.1%" numero="+")
-                p #[strong Fácil comprensión]
-                p Al ser una herramienta gráfica, permite que el proceso se pueda comprender más fácilmente.
-
-              .bg-color-6.p-3(x="61%" y="71.3%" numero="+")
-                p #[strong Versatilidad]
-                p No solo se usa en el campo informático, áreas como la administración, educación, etc., también se usan los diagramas de flujo, para la representación de sus procesos.
-
-              .bg-color-6.p-3(x="35%" y="93.2%" numero="+")
-                p #[strong Facilidad en la identificación de errores]
-                p Al comenzar a ejecutar el diagrama de flujo, se encuentran “cuellos de botella” o errores que pueden ser ajustados en el proceso, para garantizar que se resuelva el problema planteado, eficiente y eficazmente.
+    .row.mb-5
+      .col-lg-7
+        p(data-aos="fade-right") La colaboración es una habilidad esencial en la resolución de conflictos, debido a que permite que las partes transformen las tensiones en oportunidades de diálogo y fortalecimiento de relaciones. A través de la identificación de intereses comunes, la flexibilidad, la creatividad y el trabajo en equipo, la colaboración facilita la creación de soluciones sostenibles y mutuamente beneficiosas. Este enfoque no solo resuelve el conflicto actual, sino que también establece las bases para relaciones más respetuosas y constructivas a largo plazo, promoviendo un ambiente de confianza y crecimiento personal y colectivo (González Rey, 2016; UNITEC, 2016).
+        p(data-aos="fade-right") La aplicación de estos conocimientos es especialmente relevante en contextos donde la cooperación y el respeto mutuo son esenciales, como en el ámbito laboral, familiar o comunitario. La capacidad de resolver conflictos de manera pacífica, no solo mejora las relaciones, sino que también contribuye a un ambiente más armonioso y productivo en cualquier entorno. La unidad culmina con un enfoque integral que, al combinar teoría y práctica, sienta las bases para una resolución de conflictos eficaz y basada en el respeto y la comprensión, elementos clave para una convivencia pacífica y colaborativa (PNUD, 2018; UNITEC, 2016).
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema3/12.png", data-aos="zoom-in").mb-4.mb-lg-0
 
     .bg-full-width.border-top.color-primario
-      .px-4.p-md-5
+      .p-4.p-md-5
         h2 MATERIAL COMPLEMENTARIO
         .row.material-complementario
           .col-12.col-md-6.col-lg-7
             p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/56561?page=50" target="_blank" rel="noopener noreferrer") Bisbal Riera, J. (2013). Manual de algorítmica: recursividad, complejidad y diseño de algoritmos. Editorial UOC.
+              a(href="https://www.youtube.com/watch?v=saXfavo1OQo" target="_blank" rel="noopener noreferrer") Charlas TEDx ( 8 de enero de 2016). El poder de escuchar | William Ury | TEDx San Diego
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=15" target="_blank" rel="noopener noreferrer") Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Coser, LA (1956). Las funciones del conflicto social. Fondo de Cultura Económica.
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span González Rey, F. (2016). Introducción a la teoría de la cooperación en conflictos. Ediciones Humanistas.
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35" target="_blank" rel="noopener noreferrer") Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos. Universidad del Norte.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span La Rosa, M., & Rivas, P. (2017). Métodos alternativos de resolución de conflictos. Ediciones Jurídicas.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Marx, K. (1867). El capital. Siglo XXI Editores.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Mirabal, O. (2003). Fundamentos de negociación y mediación en conflictos. Editorial Universitaria.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Programa de las Naciones Unidas para el Desarrollo (PNUD). (2018). Herramientas para la resolución pacífica de conflictos. PNUD.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Universidad Tecnológica de México (UNITEC). (2016). Manual de comunicación efectiva y resolución de conflictos. UNITEC.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Weber, M. (1922). Economía y sociedad: Esbozo de sociología comprensiva. Fondo de Cultura Económica.
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')

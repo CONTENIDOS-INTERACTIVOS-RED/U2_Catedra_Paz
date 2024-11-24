@@ -20,7 +20,7 @@ export default {
       {
         nombreRuta: 'introduccion',
         icono: 'fas fa-info-circle',
-        unidad: 'UNIDAD 1.',
+        unidad: 'UNIDAD 2.',
         numero: '',
         titulo: 'Introducción',
         desarrolloContenidos: true,
@@ -28,68 +28,72 @@ export default {
       {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
-        unidad: 'Unidad 1.',
+        unidad: 'UNIDAD 2.',
         numero: '1',
-        titulo: 'Definición de algoritmo',
+        titulo: 'Teorías y enfoques para la resolución pacífica de conflictos',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Sistema',
+            titulo: 'Principales teorías sobre resolución de conflictos',
             hash: 't_1_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.2',
-            titulo: 'Pensamiento Sistémico o lógico',
-            hash: 't_1_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.3',
-            titulo: 'Eficiencia de los algoritmos',
-            hash: 't_1_3',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
-        unidad: 'Unidad 1.',
+        unidad: 'UNIDAD 2.',
         numero: '2',
-        titulo: 'Lógica algorítmica: secuencias, condiciones, ciclos',
+        titulo: 'Enfoques de negociación, mediación y arbitraje',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: 'Metodología para la solución de algoritmos',
+            titulo: 'Negociación',
             hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: 'Secuencias, condiciones, ciclos',
+            titulo: 'Mediación',
             hash: 't_2_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.3',
+            titulo: 'Arbitraje',
+            hash: 't_2_3',
           },
         ],
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
-        unidad: 'Unidad 1.',
+        unidad: 'UNIDAD 2.',
         numero: '3',
-        titulo:
-          'Representación de algoritmos: pseudocódigo y diagramas de flujo',
+        titulo: 'Técnicas y habilidades para la resolución de conflictos',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '3.1',
-            titulo:
-              'Representación de algoritmos: pseudocódigo y diagramas de flujo',
+            titulo: 'Comunicación asertiva',
             hash: 't_3_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.2',
+            titulo: 'Escucha activa',
+            hash: 't_3_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.3',
+            titulo: 'Colaboración (cooperación)',
+            hash: 't_3_3',
           },
         ],
       },
@@ -135,79 +139,95 @@ export default {
   },
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Coser, LA (1956). Las funciones del conflicto social. Fondo de Cultura Económica.',
+      link: '',
+    },
+    {
+      referencia:
+        'González Rey, F. (2016). Introducción a la teoría de la cooperación en conflictos. Ediciones Humanistas.',
+      link: '',
+    },
+    {
+      referencia:
+        'La Rosa, M., & Rivas, P. (2017). Métodos alternativos de resolución de conflictos. Ediciones Jurídicas.',
+      link: '',
+    },
+    {
+      referencia: 'Marx, K. (1867). El capital. Siglo XXI Editores.',
+      link: '',
+    },
+    {
+      referencia:
+        'Mirabal, O. (2003). Fundamentos de negociación y mediación en conflictos. Editorial Universitaria.',
+      link: '',
+    },
+    {
+      referencia:
+        'Programa de las Naciones Unidas para el Desarrollo (PNUD). (2018). Herramientas para la resolución pacífica de conflictos. PNUD.',
+      link: '',
+    },
+    {
+      referencia:
+        'Universidad Tecnológica de México (UNITEC). (2016). Manual de comunicación efectiva y resolución de conflictos. UNITEC.',
+      link: '',
+    },
+    {
+      referencia:
+        'Weber, M. (1922). Economía y sociedad: Esbozo de sociología comprensiva. Fondo de Cultura Económica.',
       link: '',
     },
   ],
   glosario: [
     {
-      termino: 'Algoritmo',
+      termino: 'Asertividad',
       significado:
-        'secuencia de pasos lógicos, finitos que resuelven un problema particular.',
+        'capacidad de expresar pensamientos y emociones de forma honesta y respetuosa, sin caer en la agresividad o la pasividad.',
     },
     {
-      termino: 'Ciclos',
+      termino: 'Arbitraje',
       significado:
-        'conjunto de instrucciones de repetición que se llevan a cabo mientras se cumple una condición.',
+        'proceso formal de resolución de conflictos en el que un tercero imparcial toma una decisión vinculante, evitando la extensión de los litigios judiciales.',
     },
     {
-      termino: 'Condiciones',
+      termino: 'Colaboración',
       significado:
-        'etapa en la que el algoritmo debe tomar una decisión y según la respuesta obtenida continuará su proceso.',
+        'esfuerzo conjunto en el que las partes implicadas trabajan hacia una solución que beneficia a todos los involucrados, priorizando los intereses compartidos.',
     },
     {
-      termino: 'Constante',
+      termino: 'Comunicación Asertiva',
       significado:
-        'es una variable almacenada en memoria y cuyo contenido no cambiará durante todo el proceso de ejecución del algoritmo.',
+        'estilo de comunicación en el que se expresan opiniones y necesidades de manera clara y respetuosa, contribuyendo a un ambiente de respeto y comprensión.',
     },
     {
-      termino: 'Diagrama de flujo',
+      termino: 'Conflicto',
       significado:
-        'representación gráfica de un proceso, ilustran paso a paso la lógica que debe seguir el programa de manera sencilla.',
+        'situación de desacuerdo o tensión entre dos o más partes debido a diferencias de intereses, necesidades o valores. Los conflictos pueden ser gestionados de manera constructiva con técnicas adecuadas.',
     },
     {
-      termino: 'Eficiencia',
-      significado: 'seleccionar la manera óptima para resolver un problema.',
+      termino: 'Escucha Activa',
+      significado:
+        'habilidad que implica prestar atención total al interlocutor, no solo a sus palabras, sino también a sus emociones y lenguaje no verbal, para lograr un entendimiento profundo.',
     },
     {
-      termino: 'Identificador',
+      termino: 'Intereses Comunes',
       significado:
-        'corresponde al nombre asignado a una variable en la memoria',
+        'necesidades u objetivos compartidos entre las partes en conflicto que pueden servir como base para construir soluciones colaborativas.',
     },
     {
-      termino: 'Memoria',
+      termino: 'Mediación',
       significado:
-        'espacio reservado dentro del sistema que contiene un nombre y una variable',
+        'proceso en el que un tercero neutral facilita el diálogo entre las partes, ayudándoles a encontrar una solución por sí mismas sin imponer decisiones.',
     },
     {
-      termino: 'Proceso',
+      termino: 'Negociación',
       significado:
-        'conjunto de instrucciones que "manipulan" los datos y entregan la solución al problema.',
+        'método de resolución de conflictos donde las partes dialogan directamente para alcanzar un acuerdo que satisfaga sus intereses sin intervención de terceros.',
     },
     {
-      termino: 'Programa',
+      termino: 'Resolución Pacífica de Conflictos',
       significado:
-        '"Conjunto de instrucciones que sigue la computadora para alcanzar un resultado específico" (Von Neumann 1946)',
-    },
-    {
-      termino: 'Pseudocódigo',
-      significado:
-        'permite escribir de manera ordenada la secuencia de pasos lógicos que el algoritmo debe ejecutar, es universal lo que implica su comprensión y lectura sin requerirse un lenguaje de programación formal para su escritura',
-    },
-    {
-      termino: 'Secuencia',
-      significado:
-        'ejecución de instrucciones de manera ordenada y jerárquica, lineal, una tras otra y sin interrupción hasta su finalización',
-    },
-    {
-      termino: 'Sistema',
-      significado:
-        'conjunto de elementos que tienen una relación directa entre sí y que interactúan de manera coordinada para obtener un objetivo específico',
-    },
-    {
-      termino: 'Variable',
-      significado:
-        'diferente a la constante, la variable sí cambia "varía" su valor según los procedimientos que se lleven a cabo dentro del algoritmo.',
+        'estrategia que busca abordar y resolver tensiones de manera no violenta, mediante el diálogo, el entendimiento mutuo y la colaboración.',
     },
   ],
   complementario: [],

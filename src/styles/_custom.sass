@@ -14,24 +14,16 @@
 
 .bg-color
   &-1
-    background-color: #E4FEFE
+    background-color: #E3F5F6
   &-2
-    background-color: #E8EEFD
+    background-color: #FBE7E4
   &-3
-    background-color: #FFF8D5
-  &-4
-    background-color: #FAE7F6
-  &-5
-    background-color: #F0E9F6
-  &-6
-    background-color: #FFFBE8
-    
-  &-7
     background-color: #FEFAF3
-  &-8
-    background-color: #DBEBF6
-  &-9
-    background-color: #CDFEF1
+  &-4
+    background-color: #FFF8D5
+  &-5
+    background-color: #E4FEFE
+
   &-sintesis
     background-color: #F9F9F9
   &-white
@@ -56,9 +48,6 @@
     background-position: top
   &-2
     background-image: url("../assets/bg/bg2.png") !important
-    background-position: bottom
-  &-3
-    background-image: url("../assets/bg/bg3.png") !important
     background-position: bottom
   &-slider
     background-image: url("../assets/bg/bg-slider.png") !important
@@ -100,15 +89,16 @@ $custom-card-img-height: 322px
     object-fit: cover
 
 .acordion__header
-  background-color: #F0E9F6 !important
+  background-color: lighten($color-acento-contenido, 34%) !important
 
 .acordion__header--active
-  background-color: #7F35AB !important
+  background-color: $color-acento-contenido !important
   h4, i
-    color: #fff !important
+    color: #000 !important
 
 .acordion__contenido
-  background-color: #F0E9F6!important
+  background-color: lighten($color-acento-contenido, 25%) !important
+
 
 
 .anexo__texto

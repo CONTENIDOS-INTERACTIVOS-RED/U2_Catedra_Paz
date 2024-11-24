@@ -1,340 +1,329 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'Unidad 1. Fundamentos del Pensamiento Algorítmico'" :subTitulo="'2. Lógica algorítmica: secuencias, condiciones, ciclos.'")
+  BannerInterno(:titulo="'Unidad 2. Teorías y enfoques para la resolución pacífica de conflictos'" :subTitulo="'2. Enfoques de negociación, mediación y arbitraje'")
   .container.tarjeta.tarjeta--blanca.px-4.px-md-5.pt-4.pt-md-5.pb-0.overflow-hidden
 
-    p.mb-4(data-aos="fade-up") Al desarrollar un algoritmo, no se podrá simplemente escribir el mismo y esperar que el resultado sea el esperado; se debe realizar un análisis del problema, definir las variables, estructurar el procedimiento y tener claro cuál será el resultado a obtener, una vez que el algoritmo termine; para lograrlo, se requiere del uso de la lógica algorítmica. El análisis del problema es fundamental y se convierte en el insumo necesario a la hora de construir un algoritmo, no solo eficiente, sino también eficaz. 
+    p(data-aos="fade-right").mb-lg-5 La capacidad de resolver confrontaciones es una competencia altamente valorada en el ámbito profesional. Las teorías sobre los problemas de relación, nos ofrecen una perspectiva para entender sus causas y niveles de intensidad. En entornos educativos y laborales, como plantea González Rey (2016), “el conflicto, cuando es gestionado de manera adecuada, puede llevar a cambios transformativos” (p. 22). 
 
-    p.mb-4(data-aos="fade-up") Antes de comenzar con la estructuración de un algoritmo, se deben contemplar algunos aspectos claves como: 
+
+    .row.align-items-center.mb-5
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/1.png", alt="")
+      .col-lg-7
+        AcordionA(tipo="b")
+          .div(titulo="Negociación")
+            p Como proceso de diálogo directo entre las partes, permite una solución cooperativa donde ambas mantienen el control de las decisiones. En entornos laborales, familiares y comerciales, esta práctica contribuye a la creación de acuerdos “ganar-ganar” mediante el intercambio de concesiones y el entendimiento mutuo (La Rosa & Rivas, 2017; UNITEC, 2016).
+
+          .div(titulo="Mediación")
+            p Introduce la intervención de un tercero neutral que facilita la comunicación y ayuda a las partes a identificar sus necesidades y explorar opciones de solución. Este enfoque es especialmente útil en situaciones donde la relación entre las partes es  fundamental y se busca preservar la cooperación a largo plazo, como en conflictos familiares o de vecindario. Al fomentar un ambiente de respeto y empatía, la mediación permite una resolución menos adversaria. (PNUD, 2018; Weber, 1922).
+
+          .div(titulo="Arbitraje")
+            p Es un proceso formal y estructurado donde un árbitro toma una decisión vinculante para las partes. Este enfoque es frecuente en disputas contractuales o laborales, donde la naturaleza del conflicto requiere una solución definitiva. A diferencia de la negociación y la mediación, el arbitraje garantiza un cierre al conflicto, proporcionando una resolución rápida y clara, aunque con menor flexibilidad para las partes (Mirabal, 2003).
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-10
+        .bg-color-1.p-4(data-aos="fade-left")
+          .row.align-items-center
+            .col-lg-auto
+              img(src="@/assets/curso/tema2/2.svg", style="max-width: 90px").mx-auto.mb-4.mb-lg-0
+            .col-lg
+              p.mb-0 Cada uno de estos enfoques ofrece una estructura adaptable a distintos tipos de conflicto y niveles de formalidad, permitiendo a las partes optar por el método más adecuado, según sus necesidades y la naturaleza del desacuerdo. Conozcamos más sobre cada uno de ellos.
+
+
+
+    #t_2_1.titulo-segundo(data-aos="flip-up")
+      h2 #[span 2.1] Negociación    
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-7
-        AcordionA(tipo="b")(data-aos="zoom-in")
-          .div(titulo="Tipos de datos numéricos")
-            p Números enteros y reales, positivos o negativos y no llevan punto decimal.
-            p Ejemplos: +200, -10, 125, 483, 119, -550
-            
-          .div(titulo="Tipos de datos alfanuméricos")
-            p Datos de tipo carácter o cadena de caracteres, contienen letras, signos, símbolos especiales, etc. Se deben escribir dentro de comillas simples (') o dobles ("). Pueden contener números, pero no se pueden realizar operaciones matemáticas con ellos.
-
-          .div(titulo="Tipo carácter")
-            p Ejemplos: 'h', 'd', 'i'
-
-          .div(titulo="Tipo cadena")
-            p Ejemplos: "universidad", "Clave_24", "jose13"
-
-          .div(titulo="Memoria")
-            p Espacio reservado dentro del sistema, que contiene un nombre y una variable. Al declarar una variable como año = 2024, se puede inferir que la variable es año y su valor es 2024.
-
-          .div(titulo="Programa")
-            p Concepto elaborado por Von Neumann en 1946 y lo define como "conjunto de instrucciones que sigue la computadora, para alcanzar un resultado específico".
-
+        p(data-aos="fade-left") La negociación es un proceso de resolución de conflictos, en el cual las partes en desacuerdo buscan alcanzar un acuerdo a través del diálogo directo y la cooperación. Es uno de los métodos más utilizados en la resolución pacífica de tensiones, puesto que permite a las partes involucradas, mantener control sobre el proceso y llegar a soluciones que satisfacen los intereses de todos, evitando, en lo posible, la confrontación. Este enfoque resulta especialmente útil en contextos donde se valora la relación a largo plazo, como en el ámbito laboral, comercial o familiar. La negociación puede ser formal o informal, estructurada o flexible, dependiendo del contexto y los intereses de las partes (La Rosa & Rivas, 2017; UNITEC, 2016).
       .col-lg-5
-        figure(data-aos="zoom-in")
-          img(src="@/assets/curso/tema2/1.svg", alt="")
+        figure
+          img(src="@/assets/curso/tema2/3.png", data-aos="zoom-in")
+
+
+    h3(data-aos="fade-right") Modelos de negociación
+
+    p(data-aos="fade-left") Existen diferentes modelos dentro de los procesos colaborativos, que se adaptan a las características del conflicto y a las expectativas de las partes. Dos de los modelos principales son: 
+
+    TabsC.color-acento-contenido.mb-5
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Modelo distributivo" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
+        .row
+          .col-lg-7.order-2
+            h4 Modelo distributivo
+            p También conocido como método “de suma cero”, este modelo considera que el recurso en juego es limitado, y cada parte intenta maximizar su propio beneficio. Este enfoque es común en contextos donde se negocia el precio o la división de recursos escasos, como en el mercado de ventas. Aunque efectivo para soluciones de corto plazo, el modelo distributivo no siempre promueve relaciones duraderas, pues puede dejar a una de las partes sintiéndose desfavorecida (Mirabal, 2003).
+        
+          .col-lg-5.order-1
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/tab-1.png', alt='').mx-auto.mb-4.mb-lg-0
+      .tabs-content.border.px-4.p-md-5.py-3(titulo="Modelo integrativo" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
+        .row
+          .col-lg-7.order-2
+            h4 Modelo integrativo
+            p Llamado también modelo “ganar-ganar”, este enfoque busca encontrar soluciones que maximicen el beneficio para todas las partes. En lugar de dividir recursos, el proceso integrativo se centra en identificar intereses comunes y opciones creativas que benefician a ambos lados. Esto es útil en situaciones de colaboración a largo plazo, como en relaciones laborales o en contextos familiares, donde el objetivo es generar confianza y reconocimiento mutuo (PNUD, 2018; González Rey, 2016).
+        
+          .col-lg-5.order-1
+            figure(data-aos="zoom-in")
+              img(src='@/assets/curso/tema2/tab-2.png', alt='')
+
+
+
+    h3(data-aos="fade-right") Estrategias de negociación
+
+    p(data-aos="fade-left") Existen diversas estrategias para optimizar el proceso de resolución colaborativa y facilitar un acuerdo efectivo entre  las partes. Algunas de ellas incluyen (La Rosa & Rivas, 2017):
+
+    .bg-full-width.bg-color-3.mb-5
+      .p-4.p-md-5
+        .row.justify-content-center
+          .col-lg-10
+            ImagenInfografica.color-acento-contenido
+              template(v-slot:imagen)
+                figure
+                  img(src='@/assets/curso/infografia/info1.png', alt='', style="max-width: 705px;").mx-auto
+
+              .bg-color-1.p-3(x="64%" y="9%" numero="+")
+                h5 Preparación y establecimiento de objetivos
+                p Antes de iniciar el proceso, es importante que cada participante identifique sus intereses, límites y posibles concesiones. Esto facilita la claridad en la toma de decisiones y previene respuestas impulsivas. Además, anticipar posibles objeciones, ayuda a mantener una postura proactiva durante el proceso.
+
+              .bg-color-1.p-3(x="39%" y="29%" numero="+")
+                h5 Escucha activa y empatía
+                p Comprender las necesidades de la otra parte es fundamental para reducir barreras de comunicación y construir un ambiente de confianza. La empatía ayuda a identificar los intereses comunes y a crear soluciones que benefician a ambas partes, una técnica especialmente efectiva en los procesos colaborativos que buscan beneficios mutuos (Weber, 1922; UNITEC, 2016).
+
+              .bg-color-1.p-3(x="64%" y="50%" numero="+")
+                h5 Comunicación asertiva
+                p Expresar necesidades y expectativas de forma clara y respetuosa, es esencial para evitar malentendidos y tensiones innecesarias. La comunicación asertiva permite a las partes presentar sus propuestas sin que se sientan atacadas, creando un entorno que promueve la colaboración.
+
+              .bg-color-1.p-3(x="39%" y="71%" numero="+")
+                h5 Intercambio de concesiones
+                p En muchos procesos de resolución, es necesario que ambas partes ofrezcan concesiones para facilitar el avance del diálogo. Este intercambio de concesiones no solo ayuda a crear un ambiente de reciprocidad, sino que también permite alcanzar un punto medio que sea satisfactorio para ambos lados.
+
+              .bg-color-1.p-3(x="64%" y="91%" numero="+")
+                h5 Enfoque en intereses comunes
+                p Centrar la resolución en los intereses, en lugar de posiciones específicas, facilita el proceso integrativo. Las posiciones representan demandas puntuales, mientras que los intereses reflejan las necesidades que subyacen a esas demandas. En un conflicto laboral, por ejemplo, un empleado podría estar solicitando un aumento de salario como puesto, mientras que su interés real es una mayor seguridad financiera. Al enfocarse en los intereses, es posible diseñar soluciones que respondan a necesidades reales y no solo a las demandas inmediatas.
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        p(data-aos="fade-left") El proceso de diálogo colaborativo, ofrece numerosos beneficios para la resolución de tensiones, al permitir que las partes mantengan el control sobre las decisiones y, a su vez, fomenten la confianza y el compromiso con el acuerdo alcanzado. Esto contribuye a que el resultado sea respetado e implementado con mayor probabilidad, dado que las partes involucradas se sienten valoradas en el proceso de toma de decisiones.
+
+        p(data-aos="fade-left") Otro beneficio es la creación de soluciones personalizadas y adaptadas a las particularidades del conflicto. A diferencia de enfoques más rígidos, como el arbitraje, el proceso de resolución colaborativa permite a las partes explorar soluciones innovadoras, adaptadas a sus necesidades y a la naturaleza de su relación. 
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/4.png", data-aos="zoom-in")
 
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-7.order-2
-        AcordionA(tipo="b")(data-aos="zoom-in")
-          .div(titulo="Constante")
-            p Es una variable almacenada en memoria y cuyo contenido no cambiará durante todo el proceso de ejecución del algoritmo.
-            
-          .div(titulo="Variables")
-            p Diferente a la constante, la variable sí cambia "varía" su valor, según los procedimientos que se lleven a cabo dentro del algoritmo.
+        p(data-aos="fade-left") Esto resulta especialmente útil en situaciones complejas o con múltiples actores, donde una solución estandarizada podría no atender adecuadamente los intereses de todas las partes. Además, al ser un proceso basado en la cooperación, el diálogo directo y colaborativo, promueve relaciones duraderas y positivas, entre las partes. 
 
-          .div(titulo="Nombres de Variables")
-            p Corresponde al nombre asignado a una variable en la memoria y deberá respetar las dos reglas siguientes:
-            ol.lista-ol
-              li 
-                span.text-bold 1. 
-                | Iniciar con una letra.
-              li 
-                span.text-bold 2. 
-                | Seguido de caracteres, como letras o números, sin acentuación.
-            p #[strong Ejemplo:] edad, num_cedula, direccion.
-            p Se debe tener en cuenta que el nombre debe ser claro y que identifique, de manera que su nombre sea representativo dentro del algoritmo. Por ejemplo, si se habla de una operación matemática como la multiplicación, se podrá utilizar num1, num2, multiplicacion.
-
-          .div(titulo="Expresiones")
-            p Los operadores y operandos componen una expresión. El operador determina el tipo de operación a realizar y los operandos serán los valores a procesar.
-
+        p(data-aos="fade-left") Los participantes tienden a desarrollar habilidades de comunicación y empatía que no solo contribuyen a resolver el conflicto actual, sino que también fortalecen la capacidad para enfrentar y resolver futuros desacuerdos de forma armoniosa y constructiva (PNUD, 2018; Mirabal, 2003). 
       .col-lg-5.order-1
-        figure(data-aos="zoom-in")
-          img(src="@/assets/curso/tema2/1.svg", alt="")
+        figure
+          img(src="@/assets/curso/tema2/5.png", data-aos="zoom-in")
 
 
-    p.mb-5(data-aos="fade-up") Los tipos de operadores que existen son: 
+    .bg-color-4.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg
+          .p-4
+            p.mb-0(data-aos="fade-up") El proceso de diálogo colaborativo, también conocido como negociación, representa un enfoque flexible y constructivo, para resolver tensiones de manera que satisfaga los intereses y necesidades de cada parte. A través de modelos como el distributivo y el integrativo, y mediante estrategias de preparación, escucha activa, comunicación y enfoque en intereses, las partes logran resolver sus desacuerdos sin recurrir a la confrontación. Este enfoque permite, asimismo, el fortalecimiento de las relaciones a largo plazo y el desarrollo de habilidades valiosas para la resolución pacífica de conflictos.
+        .col-lg-auto
+          figure
+            img(src='@/assets/curso/tema2/6.png', alt='')
 
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-10
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 2.
-          span  Tipos de operadores
-
-        .tabla-a.mb-5(data-aos="zoom-in")
-          table
-            thead
-              tr
-                th Tipo de operador
-                th Operador
-                th Operación
-
-            tbody
-              tr(style="background-color: #FFF;")
-                th.text-center #[strong Asociativos]
-                th.text-center ()
-                td Método secuencial estructurado que sigue unas reglas definidas y cuyo objetivo es encontrar una conclusión válida.
-              tr(style="background-color: #F6F6F6;")
-                th.text-center(rowspan="5") #[strong Aritméticos]
-                th.text-center ^
-                td Potencia
-              tr(style="background-color: #F6F6F6;")
-                th.text-center *
-                td Multiplicación
-              tr(style="background-color: #F6F6F6;")
-                th.text-center /
-                td División
-              tr(style="background-color: #F6F6F6;")
-                th.text-center +
-                td Suma
-              tr(style="background-color: #F6F6F6;")
-                th.text-center -
-                td Resta
-              tr(style="background-color: #FFF;")
-                th.text-center(rowspan="6") #[strong Aritméticos]
-                th.text-center =
-                td Igual
-              tr(style="background-color: #FFF;")
-                th.text-center &lt;&gt; o &gt;&lt;
-                td Diferente
-              tr(style="background-color: #FFF;")
-                th.text-center &lt;
-                td Menor que
-              tr(style="background-color: #FFF;")
-                th.text-center &gt;
-                td Mayor que
-              tr(style="background-color: #FFF;")
-                th.text-center &lt;=
-                td Menor o igual que
-              tr(style="background-color: #FFF;")
-                th.text-center &gt;=
-                td Mayor o igual que
-              tr(style="background-color: #F6F6F6;")
-                th.text-center(rowspan="3") #[strong Lógicos]
-                th.text-center NOT
-                td Negación
-              tr(style="background-color: #F6F6F6;")
-                th.text-center AND
-                td Conjunción
-              tr(style="background-color: #F6F6F6;")
-                th.text-center OR
-                td Disyunción
-
-
-        .bg-color-3.p-4.mb-5
-          .row.justify-content-center.align-items-center
-            .col-lg-auto
-              figure(data-aos="zoom-in")
-                img(src='@/assets/curso/tema2/3.svg', alt='')
-            .col-lg
-              p.mb-0(data-aos="fade-up") #[strong Importante:] al #[strong negar un valor], este cambiará de verdadero a falso y viceversa; en la #[strong conjunción] si ambos valores son verdaderos, se obtendrá un valor verdadero; en cualquier otro caso, el resultado será falso y, en la #[strong disyunción], si ambos valores son falsos, el resultado será falso; en cualquier otro caso, será verdadero.
-
-        .titulo-figura.mb-2(data-aos="fade-up")
-          h5 Tabla 3
-          span Tipos de operadores
-
-        .tabla-a.mb-5(data-aos="zoom-in")
-            table
-              thead
-                tr
-                  th Tipo de operador
-                  th Operador
-                  th Operación
-
-              tbody
-                tr(style="background-color: #FFF;")
-                  th.text-center #[strong Aritméticas]
-                  th.text-center 2 * (4-3) + 4
-                  td 6
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center(rowspan="3") #[strong Relacionales]
-                  th.text-center 7=5
-                  td Falso
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center 5&lt;3
-                  td Falso
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center 9&gt;8
-                  td Verdadero
-                tr(style="background-color: #FFF;")
-                  th.text-center(rowspan="2") #[strong Lógicas]
-                  th.text-center (4-1) &gt; (5-3)
-                  td Verdadero
-                tr(style="background-color: #FFF;")
-                  th.text-center (3-2) = (5-4)
-                  td Verdadero
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center(rowspan="3") #[strong Lógicos]
-                  th.text-center NOT
-                  td Negación
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center AND
-                  td Conjunción
-                tr(style="background-color: #F6F6F6;")
-                  th.text-center OR
-                  td Disyunción
-
-        .row.justify-content-center.align-items-start.mb-5
-          .col-lg-6
-            figure(data-aos="zoom-in")
-              img(src="@/assets/curso/tema2/4.png", alt="")
-          .col-lg-6
-            p.mb-3(data-aos="fade-up") Las reglas a seguir a la hora de resolver expresiones relacionales, son: 
-            
-            ol.lista-ol--cuadro(data-aos="fade-up").mb-3
-              li 
-                .lista-ol--cuadro__vineta
-                  span 1
-                | Primero resolver los paréntesis.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 2
-                | Encontrar valores de verdad para cada expresión.
-              li 
-                .lista-ol--cuadro__vineta
-                  span 3
-                | Aplicar jerarquía de operadores lógicos.
-            
-            p.mb-3(data-aos="fade-up") #[strong Ejemplo:]
-
-            .bg-color-4.p-4.mb-3(data-aos="fade-up")
-              p.mb-0.text-center.fw-bold (5*2)&gt;(2+3) AND (1+4)&lt;(2^2)
-
-            ol.lista-ol--cuadro(data-aos="fade-up").mb-3
-              li 
-                .lista-ol--cuadro__vineta
-                  span 1
-                | (10)&gt;(5) AND (5)&lt;(4)
-              li 
-                .lista-ol--cuadro__vineta
-                  span 2
-                | V AND F
-              li 
-                .lista-ol--cuadro__vineta
-                  span 3
-                | F
-
-
-        .bg-color-white.shadow-soft.py-4.px-lg-5(data-aos="zoom-in").mb-5
-          .row.justify-content-around.align-items-center
-            .col-md-auto
-              img(src="@/assets/template/bg-icono-link.svg", style="width: 90px;")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  h3.mb-1 Aplicación de la jerarquía de operadores
-                  p.mb-0 Se puede poner en práctica lo aprendido, desarrollando los ejercicios propuestos “Aplicación de la jerarquía de operadores” del libro: Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
-                .col-sm-auto
-                  a.boton.color-acento-botones.texto-blanco(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=24" target="_blank")
-                    span Ir al sitio web
-                    i.fas.fa-arrow-right
-
-    #t_2_1.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.1] Metodología para la solución de algoritmos      
-
-    p.mb-5(data-aos="fade-up") Recordar que una computadora es un equipo y no va a funcionar correctamente si no se le dan las instrucciones precisas para ello, es importante a la hora de desarrollar un algoritmo; se debe tener presente el paso a paso secuencial, lógico y ordenado, que le asegurará el éxito en su solución.
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
-        p.mb-4(data-aos="fade-up") Existe una metodología sugerida para la solución de los algoritmos y se puede establecer de la siguiente manera:
-        
-        ol.lista-ol--cuadro(data-aos="fade-up").mb-3
-          li 
-            .lista-ol--cuadro__vineta
-              span 1
-            | Comprender el problema. 
-          li 
-            .lista-ol--cuadro__vineta
-              span 2
-            | Generar un algoritmo inicial.
-          li 
-            .lista-ol--cuadro__vineta
-              span 3
-            | Seleccionar una estrategia de solución para el algoritmo.
-          li 
-            .lista-ol--cuadro__vineta
-              span 4
-            | Implementar el algoritmo usando un lenguaje de programación.
-          li 
-            .lista-ol--cuadro__vineta
-              span 5
-            | Probar el algoritmo.
-          li 
-            .lista-ol--cuadro__vineta
-              span 6
-            | Documentar el algoritmo.
-          li 
-            .lista-ol--cuadro__vineta
-              span 7
-            | Optimizar el algoritmo.
-
-      .col-lg-6
-        figure(data-aos="zoom-in")
-          img(src="@/assets/curso/tema2/5.svg", alt="")
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-10
-        .bg-color-white.shadow-soft.py-4.px-lg-5(data-aos="zoom-in").mb-5
-          .row.justify-content-around.align-items-center
-            .col-md-auto
-              img(src="@/assets/template/bg-icono-link.svg", style="width: 90px;")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  p.mb-0 Para ampliar el concepto de metodología para la solución de algoritmos, puede consultar el libro: Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
-                .col-sm-auto
-                  a.boton.color-acento-botones.texto-blanco(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=27" target="_blank")
-                    span Ir al sitio web
-                    i.fas.fa-arrow-right
 
     #t_2_2.titulo-segundo(data-aos="flip-up")
-      h2 #[span 2.2] Secuencias, condiciones, ciclos 
+      h2 #[span 2.2] Mediación
 
-    .bg-full-width.bg-color-5
-      .px-4.p-md-5
-        .row.justify-content-center.align-items-center
-          .col-lg-7.order-2
-            h2.mb-4(data-aos="flip-up") ¿Cuáles son los componentes claves en la lógica algorítmica? 
-            p.mb-4(data-aos="fade-right") Descubra los componentes clave de la lógica algorítmica que transformarán su comprensión de la programación. Lo invitamos a explorar nuestro PDF "Secuencias, Condiciones y Ciclos" y a profundizar en estos fundamentos esenciales para desarrollar algoritmos eficientes y bien estructurados. ¡No se lo pierda y dé el siguiente paso en su aprendizaje!
+    p(data-aos="fade-left") La mediación es un enfoque estructurado para la resolución de conflictos, en el cual un tercero neutral facilita el diálogo entre las partes, promoviendo el entendimiento y la construcción de acuerdos sin imponer una solución. Este proceso es particularmente útil en situaciones donde las partes desean mantener una relación positiva y colaborativa a largo plazo, como en conflictos familiares, laborales o comunitarios (PNUD, 2018). A diferencia de otros métodos, como la negociación directa, la mediación ofrece un ambiente controlado y seguro, donde cada parte puede expresar sus preocupaciones y expectativas de manera respetuosa, guiada por un facilitador imparcial (La Rosa & Rivas, 2017).
 
-            a.anexo.mb-4.bg-white.w-fit(:href="obtenerLink('/downloads/Anexo_Secuencias_condiciones_y_ciclos.pdf')" target="_blank")(data-aos="flip-up")
-              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
-                img(src="@/assets/template/icono-pdf.svg")
-              .anexo__texto
-                p <strong>Anexo. </strong> Secuencias, Condiciones y Ciclos
 
-          .col-lg-5.d-none.d-lg-block.order-1
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema2/6.svg', alt='')
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        .bg-color-5.px-4.py-3.mb-2
+          .row.align-items-start
+            .col-lg-auto
+              img(src='@/assets/bullets/icon-1.svg', style="max-width: 20px")
+            .col-lg
+              p.mb-0 Una de las características esenciales de la mediación, es la neutralidad del facilitador, quien debe mantener una posición imparcial para crear un ambiente de confianza y respeto. 
+        .bg-color-5.px-4.py-3.mb-2
+          .row.align-items-start
+            .col-lg-auto
+              img(src='@/assets/bullets/icon-1.svg', style="max-width: 20px")
+            .col-lg
+              p.mb-0 La función principal de este intermediario no es resolver el conflicto, sino facilitar la comunicación y guiar el proceso, asegurándo que todas las voces sean escuchadas y que el diálogo fluya sin confrontaciones.
+        .bg-color-5.px-4.py-3.mb-2
+          .row.align-items-start
+            .col-lg-auto
+              img(src='@/assets/bullets/icon-1.svg', style="max-width: 20px")
+            .col-lg
+              p.mb-0 Esta neutralidad ayuda a las partes a sentir que sus perspectivas serán consideradas sin favoritismos, lo cual es fundamental para lograr una resolución satisfactoria (González Rey, 2016).
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/7.png", data-aos="zoom-in")
+
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        .bg-color-2.p-4(data-aos="fade-left")
+          .row.align-items-start
+            .col-lg-auto
+              img(src="@/assets/curso/tema2/8.svg", style="max-width: 90px").mx-auto
+            .col-lg
+              p.mb-0 Es importante la voluntariedad del proceso. La mediación requiere que ambas partes participen de manera libre y estén dispuestas a comprometerse en la búsqueda de una solución conjunta. Esta disposición mutua, es clave para que el proceso sea efectivo, debido a que la imposición de soluciones no es compatible con la esencia colaborativa de la mediación. La voluntariedad asegura que las soluciones alcanzadas sean aceptadas de manera genuina y que las partes se sientan comprometidas a respetar el acuerdo (UNITEC, 2016).
+
+
+    h3(data-aos="fade-right") Modelos de mediación
+
+    p(data-aos="fade-left") Existen diversos modelos que se adaptan a las características y necesidades de cada situación: 
+
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema2/slider-1.png")
+            .col-lg-7
+              h5 Mediación facilitadora
+              p Este modelo es el más común y se enfoca en mejorar la comunicación entre las partes. El facilitador promueve un diálogo constructivo, ayudando a las partes a identificar sus intereses y explorar opciones de solución, que les resulten satisfactorias. La mediación facilitadora es especialmente efectiva en conflictos donde las relaciones personales son relevantes, como en disputas familiares o comunitarias, dado que el objetivo principal es restaurar la comunicación y fortalecer el vínculo entre las partes (Weber, 1922; Mirabal, 2003).
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema2/slider-2.png")
+            .col-lg-7
+              h5 Mediación evaluativa
+              p En este modelo, el facilitador desempeña un rol más activo, ofreciendo su opinión o sugerencias, sobre el conflicto. Esta modalidad es útil en situaciones donde se requieren conocimientos técnicos o legales para entender el problema, como en disputas laborales o comerciales. Aunque el facilitador no impone una solución, su orientación puede ayudar a las partes a evaluar la viabilidad de sus posiciones y considerar alternativas realistas, para resolver el conflicto (PNUD, 2018).
+          .row.align-items-center.p-4.p-md-5
+            .col-lg-5
+              figure
+                img(src="@/assets/curso/tema2/slider-3.png")
+            .col-lg-7
+              h5 Mediación transformativa
+              p Este enfoque pone el énfasis en la transformación personal de las partes a través del conflicto, fomentando el reconocimiento mutuo y la empatía. El facilitador ayuda a las partes a identificar y reflexionar sobre sus emociones y actitudes, lo cual promueve una comprensión más profunda de las causas del conflicto. Este modelo es ideal para conflictos donde el crecimiento personal y la mejora de la relación, son objetivos prioritarios, puesto que busca no solo resolver el problema, sino también fortalecer la capacidad de las partes para enfrentar futuras tensiones de manera constructiva (González Rey, 2016).
+
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        p(data-aos="fade-left") Usar la mediación, ofrece varios beneficios en comparación con otros métodos de resolución de conflictos. Al promover la participación y voluntad de las partes, este proceso permite que el acuerdo alcanzado, sea visto como una solución genuina y no como una imposición. Esta integración también contribuye a que las partes se sientan responsables del acuerdo, lo cual fortalece su compromiso a cumplirlo.
+
+        .bg-color-2.p-4(data-aos="fade-left")
+          p.mb-0 Otro beneficio importante es que la mediación fomenta relaciones positivas y colaborativas, a largo plazo. Al enfocarse en la comunicación y el entendimiento mutuo, el proceso ayuda a reducir tensiones y a prevenir futuros conflictos. Esto resulta especialmente valioso en entornos donde las partes deben interactuar regularmente, como en el lugar de trabajo o en la familia (La Rosa & Rivas, 2017; PNUD, 2018).
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/9.png", data-aos="zoom-in")
+
+
+    .bg-color-4.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg.order-2
+          .p-4
+            p.mb-0 La mediación es un enfoque efectivo y respetuoso, para resolver tensiones entre partes, brindando un espacio de diálogo facilitado por un tercero neutral. A través de modelos como la mediación facilitadora, evaluativa y transformativa, y mediante estrategias de creación de un ambiente seguro, escucha activa y exploración de intereses, la mediación permite a las partes construir soluciones consensuadas que satisfacen sus necesidades y promuevan relaciones más saludables. Al poner el énfasis en la comunicación y en la comprensión mutua, la mediación es un recurso valioso que no solo resuelve el conflicto, sino que también mejora las capacidades de las personas, para gestionar futuros desacuerdos, de manera constructiva. 
+        .col-lg-auto.order-1
+          figure
+            img(src='@/assets/curso/tema2/10.png', alt='')
+
+
+    #t_2_3.titulo-segundo(data-aos="flip-up")
+      h2 #[span 2.3] Arbitraje
+
+    p(data-aos="fade-left") Para conocer el proceso de arbitraje, lo invitamos a ver el siguiente video:
+
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        .video
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
+
+
+    h3(data-aos="fade-right") Modalidades de resolución arbitral
+
+    p(data-aos="fade-left") Existen diversas modalidades, dentro del arbitraje, que se ajustan a las particularidades de cada conflicto:
+
+    .row.align-items-center.mb-5
+      .col-lg-5.order-2
+        figure
+          img(src="@/assets/curso/tema2/11.png", alt="")
+      .col-lg-7.order-1
+        AcordionA(tipo="b")
+          .div(titulo="Arbitraje voluntario")
+            p En este formato, ambas partes acuerdan someterse al proceso de arbitraje y respetar el resultado final del árbitro. Esta modalidad es habitual en contratos comerciales, donde se prevé una cláusula para resolver conflictos de manera rápida y eficiente, sin recurrir a los tribunales.
+
+          .div(titulo="Arbitraje obligatorio")
+            p En este caso, el proceso es impuesto por ley o por cláusulas contractuales preestablecidas. Las partes están obligadas a participar y acatar la resolución. Este tipo de arbitraje es común en disputas laborales y contratos de servicios, porque asegura que el conflicto tenga una resolución rápida y definitiva, sin necesidad de judicializar el caso (La Rosa & Rivas, 2017).
+
+          .div(titulo="Arbitraje institucional y <em>ad hoc</em>")
+            p En el arbitraje institucional, una institución arbitral supervisa y regula el procedimiento, proporcionando normas y marcos administrativos que facilitan el desarrollo del proceso. En el arbitraje ad hoc, las partes acuerdan las reglas del procedimiento y la elección del árbitro sin intervención institucional, adaptando el proceso a las necesidades específicas del conflicto.
+
+    .row.align-items-center.mb-5
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/12.png", alt="")
+      .col-lg-7
+        p(data-aos="fade-left") Para asegurar la transparencia y eficacia del proceso, se aplican ciertas estrategias en cada etapa del arbitraje:
+        AcordionA(tipo="b")
+          .div(titulo="Presentación clara de argumentos y evidencias")
+            p Ambas partes deben presentar sus argumentos de manera organizada y respaldada por pruebas claras, dado que la decisión del árbitro se basará en la solidez de la información presentada. Esta preparación fortalece exhaustivamente, la posición de cada parte y facilita una comprensión completa del conflicto.
+
+          .div(titulo="Transparencia en el procedimiento")
+            p La claridad en cada etapa del proceso es esencial para que ambas partes confíen en la imparcialidad del árbitro. Informar a las partes sobre los plazos, etapas y requisitos de presentación de pruebas, contribuye para que el procedimiento sea percibido como justo y equilibrado (PNUD, 2018).
+
+          .div(titulo="Selección de un árbitro experto")
+            p La elección de un árbitro con conocimientos en el área del conflicto, asegura una resolución informada. Por ejemplo, en disputas comerciales, un árbitro con experiencia en derecho mercantil, puede aportar una perspectiva precisa, que favorece una solución justa y adecuada (González Rey, 2016).
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-7
+        p(data-aos="fade-left") El proceso arbitral presenta numerosas ventajas, especialmente en contextos donde la rapidez, confidencialidad y especialización son cruciales. Una de las mayores ventajas es la agilidad del procedimiento, que permite resolver disputas en menos tiempo que en un juicio tradicional. Esta rapidez es especialmente atractiva en el ámbito comercial, donde el tiempo es un recurso valioso y prolongar un conflicto puede resultar costoso (La Rosa & Rivas, 2017).
+
+        p(data-aos="fade-left") La imparcialidad y especialización del árbitro, también representan beneficios significativos. La elección de un árbitro con experiencia en el área del conflicto, garantiza una resolución objetiva, dado que las decisiones se basan en un conocimiento profundo del contexto del conflicto. Además, el arbitraje permite preservar las relaciones comerciales y profesionales, puesto que el proceso es menos de confrontación que un juicio, y las partes pueden mantener una relación profesional y cordial. 
+
+      .col-lg-5
+        figure
+          img(src="@/assets/curso/tema2/13.png", alt="")
+
+
+    .bg-color-4.mb-5(data-aos="fade-up")
+      .row.justify-content-center.align-items-center
+        .col-lg.order-2
+          .p-4
+            p.mb-0(data-aos="fade-up") El proceso de arbitraje es un método efectivo y formalizado, para resolver conflictos de manera rápida, confidencial y definitiva. Al conferir la autoridad de decisión a un tercero imparcial, las partes pueden resolver sus disputas con certeza y sin la prolongación de los procedimientos judiciales. Según González Rey (2016), “el arbitraje proporciona una solución justa y eficiente, evitando la extensión innecesaria de conflictos y fomentando relaciones de respeto y cooperación” (p. 90). Con modalidades como el arbitraje voluntario, obligatorio, institucional y ad hoc, este procedimiento se adapta a diversas necesidades, proporcionando un marco confiable y profesional para la resolución de conflictos, mientras protege la privacidad y asegura una solución eficiente.
+        .col-lg-auto.order-1
+          figure
+            img(src='@/assets/curso/tema2/14.png', alt='')
 
     .bg-full-width.border-top.color-primario
-      .px-4.p-md-5
+      .p-4.p-md-5
         h2 MATERIAL COMPLEMENTARIO
         .row.material-complementario
           .col-12.col-md-6.col-lg-7
             p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/56561?page=50" target="_blank" rel="noopener noreferrer") Bisbal Riera, J. (2013). Manual de algorítmica: recursividad, complejidad y diseño de algoritmos. Editorial UOC.
+              a(href="https://www.youtube.com/watch?v=saXfavo1OQo" target="_blank" rel="noopener noreferrer") Charlas TEDx ( 8 de enero de 2016). El poder de escuchar | William Ury | TEDx San Diego
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/75935?page=15" target="_blank" rel="noopener noreferrer") Gaxiola Pacheco, C. G. & Flores Gutiérrez, D. L. (2008). Metodología de la programación con pseudocódigo enfocado al lenguaje C. Plaza y Valdés.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Coser, LA (1956). Las funciones del conflicto social. Fondo de Cultura Económica.
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span González Rey, F. (2016). Introducción a la teoría de la cooperación en conflictos. Ediciones Humanistas.
             p.d-flex.my-4
-              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/69931?page=35" target="_blank" rel="noopener noreferrer") Mancilla Herrera, A. (2015). Diseño y construcción de algoritmos. Universidad del Norte.
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span La Rosa, M., & Rivas, P. (2017). Métodos alternativos de resolución de conflictos. Ediciones Jurídicas.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Marx, K. (1867). El capital. Siglo XXI Editores.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Mirabal, O. (2003). Fundamentos de negociación y mediación en conflictos. Editorial Universitaria.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Programa de las Naciones Unidas para el Desarrollo (PNUD). (2018). Herramientas para la resolución pacífica de conflictos. PNUD.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Universidad Tecnológica de México (UNITEC). (2016). Manual de comunicación efectiva y resolución de conflictos. UNITEC.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
+              span Weber, M. (1922). Economía y sociedad: Esbozo de sociología comprensiva. Fondo de Cultura Económica.
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')
