@@ -222,49 +222,215 @@
         figure
           img(src="@/assets/curso/tema3/12.png", data-aos="zoom-in").mb-4.mb-lg-0
 
-    .bg-full-width.border-top.color-primario
+    .bg-full-width.border-top.actividad.bg-color-actividad
       .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
+    .bg-full-width.border-top.color-primario
+      .px-4.p-md-5
         h2 MATERIAL COMPLEMENTARIO
         .row.material-complementario
           .col-12.col-md-6.col-lg-7
             p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://www.youtube.com/watch?v=saXfavo1OQo" target="_blank" rel="noopener noreferrer") Charlas TEDx ( 8 de enero de 2016). El poder de escuchar | William Ury | TEDx San Diego
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
             p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Coser, LA (1956). Las funciones del conflicto social. Fondo de Cultura Económica.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span González Rey, F. (2016). Introducción a la teoría de la cooperación en conflictos. Ediciones Humanistas.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span La Rosa, M., & Rivas, P. (2017). Métodos alternativos de resolución de conflictos. Ediciones Jurídicas.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Marx, K. (1867). El capital. Siglo XXI Editores.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Mirabal, O. (2003). Fundamentos de negociación y mediación en conflictos. Editorial Universitaria.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Programa de las Naciones Unidas para el Desarrollo (PNUD). (2018). Herramientas para la resolución pacífica de conflictos. PNUD.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Universidad Tecnológica de México (UNITEC). (2016). Manual de comunicación efectiva y resolución de conflictos. UNITEC.
-            p.d-flex.my-4
-              img.me-3(src='@/assets/template/book.svg' :style="{'max-width':'20px'}")
-              span Weber, M. (1922). Economía y sociedad: Esbozo de sociología comprensiva. Fondo de Cultura Económica.
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/RSJrBEhdZxw" target="_blank" rel="noopener noreferrer") BBC News Mundo. (2020, 2 octubre). Qué son los algoritmos y cómo aprenden de nosotros | BBC Mundo
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
   name: 'Tema3',
-  data: () => ({
-    // variables de vue
-  }),
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Técnicas y habilidades para la resolución de conflictos',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál de las siguientes habilidades es crucial en la mediación?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Imponer una solución',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Escucha activa',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Controlar a las partes',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Criticar las opiniones',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              'Según Max Weber, ¿qué es lo que generalmente desencadena un conflicto?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Falta de recursos',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Relaciones de poder',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Exceso de comunicación',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Ausencia de autoridad',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál de los siguientes es un objetivo clave de la mediación en conflictos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Forzar un acuerdo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Mantener la neutralidad',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Ignorar las emociones de las partes',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Imponer una solución inmediata',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto: 'La teoría funcionalista ve el conflicto como:',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Algo que debe evitarse a toda costa',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Una fuerza que puede tener efectos positivos',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Un problema estrictamente económico',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Exclusivo de las organizaciones laborales',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto: 'En el proceso de arbitraje, ¿quién toma la decisión final?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Las partes involucradas',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Un tercero imparcial',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'El juez de paz',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'El supervisor',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
 }
 </script>
+
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>

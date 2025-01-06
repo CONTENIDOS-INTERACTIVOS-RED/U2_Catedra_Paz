@@ -20,8 +20,8 @@
           //- Columna derecha con información
           .col-xl-7.info-section
             .content-wrapper.px-lg-4.pt-lg-4.px-xl-5.py-xl-5.text-start
-              p.home-main-title UNIDAD 1
-              h1.home-title.mb-4.text-uppercase Teorías y enfoques para la resolución pacífica de conflictos
+              p.home-main-title UNIDAD 2
+              h1.home-title.mb-4 Teorías y enfoques para la resolución pacífica de conflictos
               p.descripcion.mb-4 La paz y la resolución de conflictos son pilares fundamentales en la convivencia y el desarrollo de la sociedad. En esta unidad, se profundizará en las principales teorías y enfoques que explican el surgimiento de los conflictos, así como en métodos prácticos para abordarlos de manera efectiva y pacífica. Se explorarán herramientas como la negociación, la mediación y el arbitraje, que permitirán a los participantes transformar los desacuerdos en oportunidades de entendimiento y cooperación, esenciales en cualquier ámbito personal o profesional.
 
               p.descripcion.mb-4.mb-lg-5.pb-lg-4 #[strong ¡Prepárese para fortalecer sus habilidades en la gestión pacífica de conflictos y contribuir a la construcción de ambientes colaborativos y armoniosos!]
