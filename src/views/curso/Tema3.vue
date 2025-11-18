@@ -236,10 +236,13 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/58906" target="_blank" rel="noopener noreferrer") Cabrera R. (2017) La mediación como método para la resolución de conflictos. Dykinson
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://youtu.be/RSJrBEhdZxw" target="_blank" rel="noopener noreferrer") BBC News Mundo. (2020, 2 octubre). Qué son los algoritmos y cómo aprenden de nosotros | BBC Mundo
+              a(href="https://youtu.be/X0HgUJE-W8E?si=ceSjytvT0sVZtrya" target="_blank" rel="noopener noreferrer") Linzoain, P (22 de marzo de 2022) Modelo Harvard De Negociación, Técnicas De Negociación #Mediación Y Resolución De Conflictos (archivo de video) Youtube
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://organizacioneshumanas.org/blog/11-practicos-pasos-hacia-dinamicas-del-poder-mas-sanas-en-el-trabajo-mas-empowerment-menos-coercion-richard-d-bartlett-2/" target="_blank" rel="noopener noreferrer") Barlett, R. (8 de julio de 2010) 11 Prácticos Pasos hacia Dinámicas del Poder más sanas en el trabajo Más empowerment, menos coerción. (blog)
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')

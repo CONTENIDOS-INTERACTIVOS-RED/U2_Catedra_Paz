@@ -301,10 +301,13 @@
 
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/50327?page=37" target="_blank" rel="noopener noreferrer") Joyanes Aguilar, L. (2005). Programación en C: metodología, algoritmos y estructura de datos. McGraw-Hill España.
+              a(href="https://elibro.net/es/ereader/tecnologicadeloriente/46422" target="_blank" rel="noopener noreferrer") García L. (2010). Mediación, arbitraje y resolución extrajudicial de conflictos en el siglo XXI. Tomo II: arbitraje y resolución extrajudicial de conflictos. Editorial reus
             p.d-flex.my-4
               img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
-              a(href="https://youtu.be/RSJrBEhdZxw" target="_blank" rel="noopener noreferrer") BBC News Mundo. (2020, 2 octubre). Qué son los algoritmos y cómo aprenden de nosotros | BBC Mundo
+              a(href="https://youtu.be/K94Fn268AuI?si=rXmefU-Bw-bNSlBS" target="_blank" rel="noopener noreferrer") SFPIE UV. (24 de noviembre de 2017) Negociación, conciliación y transacción. (archivo de video) Youtube
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://itasaludmental.com/blog/link/350#" target="_blank" rel="noopener noreferrer") Benavente P. (2 de julio de 2022) ¿Qué es la comunicación asertiva? (blog) Ita salud mental.
           .col-12.col-md-6.col-lg-3.offset-lg-1
             figure
               img(src='@/assets/componentes/material-complementario.svg', alt='')
